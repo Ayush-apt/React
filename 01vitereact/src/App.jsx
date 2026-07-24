@@ -1,9 +1,14 @@
 import { useState } from 'react'
+import Chai from './chai'
 
 
 function App() {
   return (
-    <h1>Chai aur React with Vite | ASHU</h1>
+    <>
+      <Chai/>
+      <h1>chai aur React</h1>
+      <p>test para</p>
+    </>
   )
 
 }
