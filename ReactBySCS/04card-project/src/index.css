@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.parent{
+  width: 100%;
+  padding: 30px;
+  background-color: #111;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card{
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  color: #111;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+.card .top{
+  margin: 10px 0px 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card .top img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #888;
+  padding: 5px
+}
+
+.card .top button{
+  height: 30px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #afafaf;
+  color: #9d9d9d;
+  border-radius: 6px;
+  font-weight: 600;
+  gap: 2px;
+}
+
+.book{
+  height: 15px;
+  width: 15px;
+  color: #afafaf;
+}
+
+.center span{
+  color: #afafaf;
+  font-size: 11px;
+}
+
+.center .type{
+  margin: 20px 0px;
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.center .type h4{
+  background-color: #ececec;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+hr{
+  margin: 100px 0px 40px 0px;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom p{
+  font-size: 10px;
+  color: #afafaf;
+  font-weight: 500;
+}
+
+.apply{
+  height: 30px;
+  width: 100px;
+  color: #fff;
+  background-color: #111;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+}
