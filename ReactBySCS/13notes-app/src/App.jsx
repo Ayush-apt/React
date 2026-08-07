@@ -17,6 +17,12 @@ const App = () => {
     setDetail('')
   }
 
+  const deleteNote = (idx) => {
+    const copyTask = [...task]
+    copyTask.splice(idx, 1)
+    setTask(copyTask)
+  }
+
   return (
     <div className='h-screen lg:flex w-full bg-black text-white'>
 
@@ -50,22 +56,23 @@ const App = () => {
       </div>
 
 
-      <div className='lg:w-1/2 lg:border-l-2 sm:border-t-2 border-white  flex flex-col bg-gray-800 p-10'>
-        <h1 className='text-2xl font-bold'>Your Notes</h1>
+      <div className='lg:w-1/2 lg:border-l-2 sm:border-t-2 border-white  flex flex-col bg-black p-10'>
+        <h1 className='text-2xl font-bold'>Recent Notes</h1>
         <div className='flex flex-wrap h-full overflow-auto gap-5 mt-5'>
           {
-            task.map( (elem) => {
+            task.map( (elem, index) => {
               return(
                 <Card 
                   head= {elem.head}
                   detail= {elem.detail}
+                  index = {index}
+                  deleteNote={deleteNote}
                 />
               )
             })
           }
         </div>
-      </div>
-
+        </div>
     </div>
   )
 }
